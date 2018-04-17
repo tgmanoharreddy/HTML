@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Elements</title>
+    <style>
+        div{
+          background-color: seagreen;
+          padding: 10px;
+          margin: 5px;
+          width: 400px;
+          color: white;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- input and label -->
+    <div>
+        <form>
+            <label for="username">UserName</label>
+            <input type="text" id="username">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" id="password">
+            <br>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+
+    <!-- Form with Table Tag -->
+    <div>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <label>UserName</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Password</label>
+                    </td>
+                    <td>
+                        <input type="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <!-- Select and Option -->
+    <div>
+        <label>Select a Language</label>
+        <select>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+            <option>JQuery</option>
+            <option>Bootstrap</option>
+            <option>Angular JS</option>
+        </select>
+    </div>
+
+    <!-- Textarea -->
+    <div>
+        <label>Add your Comments</label>
+        <textarea rows="5" cols="20"></textarea>
+    </div>
+
+    <!-- datalist -->
+    <div>
+        <label>Select a Technology</label>
+        <input list="technologies" name="tech">
+        <datalist id="technologies" >
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JavaScript">
+            <option value="Bootstrap">
+            <option value="JQuery">
+            <option value="Angular JS">
+        </datalist>
+    </div>
+
+</body>
+</html>
